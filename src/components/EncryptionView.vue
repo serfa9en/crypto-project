@@ -6,7 +6,7 @@
             class="btn"
             v-on:click="start-crypto()"
             >
-                <p class="text">Шифровать</p>
+                <p class="text">Шифровать Шифровать</p>
             </div>
         </div>
     </div>
