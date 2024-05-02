@@ -13,6 +13,9 @@
 </template>
 
 <script>
+export default {
+  name: 'decryption'
+}
 </script>
 
 <style scoped>

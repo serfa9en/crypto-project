@@ -1,17 +1,14 @@
 <template>
     <div>
-        <div class="title">
-            <h1>Криптоанализ Аффинного шифра</h1>
-        </div>
-        <div>
-            <EncryptionView/>
-            <DecryptionView/>
-            <CryptoanalysisView/>
-        </div>
+        <HeaderView/>
+        <EncryptionView/>
+        <DecryptionView/>
+        <CryptoanalysisView/>
     </div>
 </template>
 
 <script>
+import HeaderView from './Header.vue'
 import EncryptionView from './EncryptionView.vue'
 import DecryptionView from './DecryptionView.vue'
 import CryptoanalysisView from './CryptoanalysisView.vue'
@@ -19,6 +16,7 @@ import CryptoanalysisView from './CryptoanalysisView.vue'
 export default {
   name: 'MainView',
   components: {
+    HeaderView,
     EncryptionView,
     DecryptionView,
     CryptoanalysisView
@@ -26,15 +24,8 @@ export default {
 }
 </script>
 
-<style scoped>
-.title {
-    width: 100%;
-    height: 100px;
-    background: paleturquoise;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
+<style>
+div {
+    margin:0;
 }
 </style>
