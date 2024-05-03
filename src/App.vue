@@ -1,6 +1,13 @@
 <template>
   <div>
-    <p class="title">Криптоанализ Аффинного шифра</p>
+    <div class="header-title">
+      <p class="title">Криптоанализ Аффинного шифра</p>
+      <div class="header-btn">
+        <p class="btn-hh"><a href="#encrypt">Шифрование</a></p>
+        <p class="btn-hh">Дешифровка</p>
+        <p class="btn-hh">Криптоанализ</p>
+      </div>
+    </div>
     <div class="block-main">
       <EncryptionView/>
       <DecryptionView/>
@@ -34,23 +41,70 @@ body {
   margin:0;
 }
 
-.title {
+.header-title {
     width: 100%;
-    height: 100px;
-    font-size: 36px;
-    margin-block: -100px;
+    height: 230px;
+    margin-block: -230px;
     text-align: center;
-    display: flex;
     justify-content: center;
     align-items: center;
     color: #500050;
-    background: rgba(255, 188, 255, 0.3);
+    border: #500050 2px solid;
+    background: #fff;
     position: fixed;
+}
+
+.title {
+  width: 100%;
+    font-size: 36px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #500050;
+}
+
+.header-btn {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.btn-hh {
+  border: 2px solid purple;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.btn-hh:hover {
+  background: #ebceeb;
+  cursor: pointer;
 }
 
 .block-main {
   width: 100%;
   height: auto;
-  margin-top: 100px;
+  margin-top: 230px;
+}
+
+a:link {
+  color: #500050; 
+  text-decoration: none;
+}
+a:visited {
+  color: #500050;
+  text-decoration: none;
+}
+a:hover {
+  color: #500050; 
+  text-decoration: none;
+}
+a:active {
+  color: #500050; 
+  text-decoration: none;
 }
 </style>

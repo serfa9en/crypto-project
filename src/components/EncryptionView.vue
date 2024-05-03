@@ -1,6 +1,6 @@
 <template>
     <div class="settings">
-        <p class="name-enc">Шифрование</p>
+        <p id="encrypt" class="name-enc">Шифрование</p>
             <div class="conteiner">
                 <div class="block">
                     <textarea></textarea>
